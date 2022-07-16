@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.heading, .footer, .illustration-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.illustration-wrapper img {
+    width: 325px;
+    height: auto;
+}
+
+.heading {
+    padding: 40px;
+    margin-top:50px;
+}
+
+.heading svg {
+    margin: 5px 0;
+}
+
+.heading h1 {
+    padding: 10px 0;
+    font-size: 27.5px;
+    font-weight: 380;
+}
+
+.heading p {
+    margin: 10px 0;
+    font-weight: 380;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:11px;
+    margin: 10px 0;
+    width:100%;
+}
+
+input, button {
+    padding: 12px 20px;
+    width: 275px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid hsl(223, 87%, 63%);
+}
+
+.input-non-valid {
+    border: 1px solid rgb(225, 61, 61);
+}
+
+button {
+    background-color: #4C7BF3;
+    border: 1px solid #4C7BF3;
+    color:white;
+}
+
+input::placeholder {
+    color: gainsboro;
+}
+
+.warning-text {
+    font-size: 13px;
+    color: rgb(225, 61, 61);
+    display: none;
+}
+
+.footer {
+    margin: 20px 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.fa-brands {
+    color: #4C7BF3;
+    font-size: 27.5px;
+    margin:10px;
+    padding:10px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-brands:hover {
+    color: white;
+    background-color: #4C7BF3;
+    border: 1px solid #4C7BF3;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-weight: 380;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media screen and (min-width:900px) {
+    .illustration-wrapper img {
+        width: 700px;
+    }
+
+    .heading svg {
+        margin: 15px 0;
+    }
+
+    .heading h1 {
+        font-size: 35px;
+    }
+
+    .heading p {
+        margin: 7px 0;
+    }
+
+    form {
+        margin: 20px 0;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    input {
+        width:375px;
+    }
+
+    button {
+        width:200px;
+    }
+    input,
+    button {
+        padding: 13px 20px;
+        border-radius: 25px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
