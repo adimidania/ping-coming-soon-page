@@ -15,10 +15,10 @@ function submitEmail(e) {
   e.preventDefault();
   const userInput = input.value;
   if (!ValidateEmail(userInput)) {
-    warningText.style.display = "block";
+    warningText.style.visibility = "visible";
     input.classList.add("input-non-valid");
   } else {
-    warningText.style.display = "none";
+    warningText.style.visibility = "hidden";
     input.classList.remove("input-non-valid");
   }
 }

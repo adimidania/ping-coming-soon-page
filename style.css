@@ -54,9 +54,17 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:11px;
+    gap:5px;
     margin: 10px 0;
     width:100%;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 input, button {
@@ -79,6 +87,12 @@ button {
     background-color: #4C7BF3;
     border: 1px solid #4C7BF3;
     color:white;
+    transition: 0.5s ease-out;
+}
+
+button:hover {
+    background-color: #7696e9;
+    border: 1px solid #7696e9;
 }
 
 input::placeholder {
@@ -88,7 +102,7 @@ input::placeholder {
 .warning-text {
     font-size: 13px;
     color: rgb(225, 61, 61);
-    display: none;
+    visibility: hidden;
 }
 
 .footer {
@@ -112,7 +126,7 @@ input::placeholder {
     border-radius: 50%;
     border: 1px solid gainsboro;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .fa-brands:hover {
@@ -125,10 +139,6 @@ input::placeholder {
     margin: 10px 0;
     font-weight: 380;
     font-size: 14px;
-}
-
-button:hover {
-    opacity: 0.9;
 }
 
 @media screen and (min-width:900px) {
@@ -150,8 +160,10 @@ button:hover {
 
     form {
         margin: 20px 0;
+    }
+
+    .form-wrapper {
         flex-direction: row;
-        align-items: flex-start;
     }
 
     input {
@@ -167,5 +179,10 @@ button:hover {
         border-radius: 25px;
         font-size: 14px;
         cursor: pointer;
+    }
+
+    .warning-text {
+        margin-top: 5px;
+        font-size: 14.5px;
     }
 }
